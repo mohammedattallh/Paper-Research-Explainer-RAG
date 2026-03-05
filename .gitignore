@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.so
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# PyTorch / Transformers / Models
+*.pt
+*.bin
+*.safetensors
+/models/
+.cache/
+
+# Streamlit / ngrok
+.streamlit/
+*.session
+*.json
+*.db
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# PyPDF / PDFs uploaded
+*.pdf
+
+# Colab checkpoints
+.ipynb_checkpoints/
+
+# VSCode
+.vscode/
