@@ -168,21 +168,17 @@ streamlit run app.py
 ```
 ### 🖼️ Screenshots
 
-**Streamlit Frontend – Home Page**
-
-![ChatPaper Home](screenshots/home_page.png)
-
 **Paper Summarization Page**
 
-![Summarization Page](screenshots/summarization_page.png)
+![Summarization Page](image/summary.png)
 
 **Diagram Explanation**
 
-![Diagram Explanation](screenshots/diagram_page.png)
+![Diagram Explanation](image/diagram.png)
 
-**Equation Explanation**
+**Question Answering**
 
-![Equation Explanation](screenshots/equation_page.png)
+![Equation Explanation](image/q&a.png)
 
 ## 🚀 Future Improvements
 
