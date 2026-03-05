@@ -44,6 +44,36 @@ The tool is designed to make complex papers more accessible and interactive, hel
 
 ---
 
+## ⚡ System Architecture
+
+```text
++---------------------+      +---------------------+      +---------------------+
+|                     |      |                     |      |                     |
+|   User Interface    | ---> |  FastAPI Backend    | ---> |  LangChain + FAISS  |
+|   (Streamlit)       |      |  Endpoints          |      |  Vector DB          |
+|   - Summarization   |      |  - /summary         |      |  - Stores embeddings|
+|   - QA              |      |  - /q&a             |      |  - Retrieves docs   |
+|   - Diagrams        |      |  - /diagram_explanation |  |                     |
+|   - Equations       |      |  - /equation_explanation|  |                     |
++---------------------+      +---------------------+      +---------------------+
+                                      |
+                                      v
+                             +---------------------+
+                             |    AI Models        |
+                             |  - LLMs (GPT, etc.)|
+                             |  - Sentence Transformers |
+                             |  - HuggingFace Models|
+                             +---------------------+
+                                      |
+                                      v
+                             +---------------------+
+                             |  PDF Processing     |
+                             |  - PyMuPDF          |
+                             |  - PyPDF2           |
+                             |  - Equation & Diagram|
+                             |    extraction       |
+                             +---------------------+
+
 ## 🛠️ Technology Stack
 - **Frontend:** Streamlit  
 - **Backend API:** FastAPI  
