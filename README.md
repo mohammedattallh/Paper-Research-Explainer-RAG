@@ -102,7 +102,21 @@ The tool is designed to make complex papers more accessible and interactive, hel
 - Supports displaying images, figures, and equations interactively.
 
 ---
+## Project Structure
+```text
 
+ChatPaper/
+├── app.py                   # Streamlit frontend
+├── api/
+│   ├── main.py              # FastAPI endpoints
+│   ├── vector_db.py         # Vector database builder
+│   ├── equation_utils.py    # Equation extraction & explanation
+│   └── diagram_utils.py     # Figure extraction & explanation
+├── models/                  # Pretrained AI models
+├── requirements.txt         # Required packages
+└── README.md
+```
+---
 ## 🔧 Installation and Running on Google Colab / Local
 
 ```bash
