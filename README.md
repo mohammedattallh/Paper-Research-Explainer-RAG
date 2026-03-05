@@ -73,6 +73,8 @@ The tool is designed to make complex papers more accessible and interactive, hel
                              |  - Equation & Diagram|
                              |    extraction       |
                              +---------------------+
+```
+---
 
 ## 🛠️ Technology Stack
 - **Frontend:** Streamlit  
