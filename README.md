@@ -4,6 +4,18 @@
 
 ---
 
+## 📝 Overview
+**ChatPaper** is an AI-powered research assistant that helps researchers, students, and scientists **quickly explore academic papers**. It streamlines reading, understanding, and extracting knowledge from research PDFs by providing:
+
+- **Structured paper summarization**  
+- **Question answering using RAG**  
+- **Diagram explanations with textual insights**  
+- **Mathematical equation extraction and LaTeX rendering**
+
+The tool is designed to make complex papers more accessible and interactive, helping users **focus on insights rather than manual reading**.
+
+---
+
 ## 🌟 Features
 
 ### 1️⃣ Paper Summarization
