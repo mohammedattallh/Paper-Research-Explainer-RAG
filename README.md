@@ -117,11 +117,76 @@ ChatPaper/
 └── README.md
 ```
 ---
-## 🔧 Installation and Running on Google Colab / Local
+## ⚙️ Installation Steps
+
+Follow these steps to set up ChatPaper locally or on Google Colab.
+
+---
+
+### 1️⃣ Create Virtual Environment (Local)
 
 ```bash
-# Install required packages
-!pip install faiss-cpu langchain-core pypdf sentence-transformers transformers torch langchain-text-splitters pymupdf pyngrok PyPDF2 bitsandbytes accelerate
+# Create a virtual environment
+python -m venv venv
 
-# Run the Streamlit app
-!streamlit run app.py
+# Activate the virtual environment (Windows)
+venv\Scripts\activate
+
+# Activate the virtual environment (Linux / Mac)
+source venv/bin/activate
+```
+### 2️⃣ Install Dependencies
+
+**Option 1: Install from `requirements.txt`**
+
+```bash
+pip install -r requirements.txt
+```
+### 3️⃣ Configure Environment Variables
+- Create a .env file in the project root:
+
+```bash
+API_KEY=your_secret_api_key
+```
+## Run the Application
+
+### 4️⃣ Run the Backend API (FastAPI)
+
+- From the project root directory, run:
+```bash
+uvicorn api.main:app --reload
+```
+- Default URL: http://127.0.0.1:8000/
+- Swagger Documentation: http://127.0.0.1:8000/docs
+
+### 5️⃣ Run the Frontend (Streamlit)
+
+- From the project root directory, run:
+
+```bash
+streamlit run app.py
+```
+### 🖼️ Screenshots
+
+**Streamlit Frontend – Home Page**
+
+![ChatPaper Home](screenshots/home_page.png)
+
+**Paper Summarization Page**
+
+![Summarization Page](screenshots/summarization_page.png)
+
+**Diagram Explanation**
+
+![Diagram Explanation](screenshots/diagram_page.png)
+
+**Equation Explanation**
+
+![Equation Explanation](screenshots/equation_page.png)
+
+## 🚀 Future Improvements
+
+- Support for more file formats (DOCX, HTML).  
+- Enhance RAG for handling more complex questions.  
+- Support more complex equations with step-by-step explanations.  
+- Deploy as a SaaS platform for public access.  
