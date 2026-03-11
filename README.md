@@ -168,6 +168,10 @@ streamlit run app.py
 ```
 ### 🖼️ Screenshots
 
+**Home Page**
+
+![Home Page](image/home.png)
+
 **Paper Summarization Page**
 
 ![Summarization Page](image/summary.png)
@@ -176,9 +180,13 @@ streamlit run app.py
 
 ![Diagram Explanation](image/diagram.png)
 
+**Equation Explanation**
+
+![Equation Explanation](image/equation.png)
+
 **Question Answering**
 
-![Equation Explanation](image/q&a.png)
+![Question Answering](image/q&a.png)
 
 ## 🚀 Future Improvements
 
